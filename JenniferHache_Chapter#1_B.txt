@@ -1,0 +1,87 @@
+Name: Jennifer Hache
+Date: 08/30/2024
+
+Description: 
+This application simulates an 8-Ball game in which the user will have to ask a yes/no question. They will also have the option to quit the game. 
+
+Logic Steps:
+
+1. Import the random module
+	1a. imported to generate random numbers and select random items from a list.
+
+2. While loop used for user input
+	2a. used to continuously ask the user to enter question until they type 'quit' to end the game.
+
+3. Ask user to enter question
+	3a. The user is prompted to ask a yes/no question. The input is stored in the variable called "question".
+
+4. Ensuring quit command ends game
+	4a. An if statement checks if the user enters 'quit'. If true, the program prints "Game over!" 
+	and breaks the loop - game is over.
+
+5. Random number and looping using "for"
+	5a. For loop runs for a number of iterations from a random number generated between 0 and 12.
+
+6. Random response given.
+	6a. The program will open the 8ball_responses.txt file, reads its contents, and splits it into a list of lines.
+	the random.choice will select a random response from the list.
+
+7. Print response.
+	7a. The selected response is printed and will display "8-Ball Answer is: ".
+
+Variables Used\
+
+1. question: 
+Desc: keeps the user's input regarding a yes/no question and the option to quit the game.
+
+2. i: 
+Desc: Used as an index in the "for" loop.
+
+3. response:
+Desc: Stores a randomly selected response from the list of responses read from the 8ball_responses.txt file.
+
+Functions Used
+
+random.choice():
+This function is used to select a random element from a non-empty sequence.
+Parameters:
+sequence: This is a list.(like a string) from which random.choice will select a random element.
+
+random.randrange(start, stop):
+Generates a random number from the specified range (0 to 12).
+Parameters:
+start: The starting point of the range.
+stop: The end point of the range.
+
+input():
+used to prompt the user for input and store their response.
+Parameters:
+prompt: A string that will be displayed as a message. User will have to enter input.
+
+print(object):
+Outputs the message.
+Parameters:
+object: The item(s) you want to print. If separated by commas, multiple objects can be printed.
+
+open(filename, mode): read content
+Parameters:
+filename: The name of the file you want to open.
+mode: The mode in which you want to open the file "r" is for reading.
+
+Opens the file 8ball_responses.txt in read mode ("r") to read its contents.
+
+.read().splitlines():
+Reads the entire file and splits it into a list.
+Parameters:
+boolean that specifies whether to keep line breaks. The default is False.
+.read parameters: none
+
+break:
+exits the enclosing loop.
+Parameters:
+None
+
+https://github.com/Jhache06/JenniferHache_Chapter-1_B.git
+
+Name: Jennifer Hache
+Date: 08/30/2024
